@@ -1,4 +1,8 @@
-# G.R. Patil — React app (free stack)
+# Praxis Legal Advisory — React app (free stack)
+
+Marketing and consultation-booking site for a Maharashtra legal advisory: structured intake, legal orientation, and introductions to independent counsel. Complimentary initial consultation.
+
+Photos in `public/images/` are from the free Unsplash library ([Unsplash License](https://unsplash.com/license): free for commercial use, no attribution required). Do not add images from Google Images unless their license explicitly allows reuse.
 
 | Tool | Cost | Role |
 |------|------|------|

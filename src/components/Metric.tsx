@@ -3,9 +3,10 @@ import { useEffect, useRef, useState } from "react";
 type MetricProps = {
   target: number;
   label: string;
+  suffix?: string;
 };
 
-export function Metric({ target, label }: MetricProps) {
+export function Metric({ target, label, suffix = "+" }: MetricProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [value, setValue] = useState(0);
   const [started, setStarted] = useState(false);
@@ -46,7 +47,10 @@ export function Metric({ target, label }: MetricProps) {
 
   return (
     <div className="metric" ref={ref}>
-      <span className="metric-value">{value}</span>
+      <span className="metric-value">
+        {value}
+        {suffix && <span className="metric-suffix">{suffix}</span>}
+      </span>
       <span className="metric-label">{label}</span>
     </div>
   );
